@@ -1,0 +1,39 @@
+.Product {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+  
+.Product:hover {
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+  
+.Product img {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    position: relative;
+}
+  
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 15px;
+}
+  
+.material-icons {
+    color: black;
+}
+  
+.material-icons:hover {
+    color: gray;
+}
+  
+.name {
+    text-align: center;
+    font-size: 17px;
+}
