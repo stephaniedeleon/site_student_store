@@ -1,5 +1,6 @@
 import Home from "../Home/Home";
 import ProductDetail from "../ProductDetail/ProductDetail";
+import Navbar from "../Navbar/Navbar";
 import axios from "axios";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from 'react';
@@ -34,11 +35,11 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <h1>Student Store</h1>
+        <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home products={products}/>} />
-          <Route path="/store/:productId" element={<ProductDetail />} /> */}
+          <Route path="/" element={<Home products={products} />} />
+          <Route path="/store/:productId" element={<ProductDetail />} />
         </Routes>
       </BrowserRouter>
     </div>
