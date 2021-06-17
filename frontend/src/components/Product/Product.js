@@ -7,18 +7,22 @@ export default function Product({ key, item }) {
 
     return (
       <div className="Product">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <Link to={`/store/${item.id}`} >
-            <img alt={`${item.name} pic`} src={item.image} />
-            <div className="info">
-                <p className="name">{item.name}</p>
-                <p className="price">{formatAmount(item.price)}</p>
-            </div>
-            <span className="material-icons"> + </span>
-            <span className="material-icons"> - </span>
+          <img alt={`${item.name} pic`} src={item.image} />
         </Link>
+          <div className="info">
+              <p className="name">{item.name}</p>
+              <p className="price">{formatAmount(item.price)}</p>
+          </div>
+        <div className="quantity">
+          <span className="material-icons">remove</span>          
+          <span><p> # </p></span>
+          <span className="material-icons">add</span>
+        </div>
       </div>
     );
-  }
+}
 
 
 /*

@@ -1,8 +1,8 @@
-import { formatAmount } from "../../utils/format"
-import { useParams } from "react-router-dom"
-import "./ProductDetail.css"
-import { useState, useEffect } from "react"
-import axios from "axios"
+import { formatAmount } from "../../utils/format";
+import { useParams } from "react-router-dom";
+import "./ProductDetail.css";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function ProductDetail() {
 
@@ -23,9 +23,9 @@ export default function ProductDetail() {
         const res = await axios.get(`http://localhost:3001/store/${productId}`);
         
         if (res?.data?.product) {
-            setProduct(res.data.product)
+            setProduct(res.data.product);
         } else {
-            setError("Product not found")
+            setError("Product not found");
         }
 
       } catch (err) {
@@ -40,6 +40,7 @@ export default function ProductDetail() {
   }, [productId])
 
 
+  //TODO: Need to update!!i
   //rendering the product content
   const renderProductContent = () => {
 
@@ -48,9 +49,16 @@ export default function ProductDetail() {
 
     return (
       <>
+        <div className="title">
+            <h3>{product?.name}</h3>
+            <p className="price">{formatAmount(product?.price)}</p>
+        </div>
         <p className="description">{product?.description}</p>
-        <div>
-          <p className="price">{formatAmount(product?.price)}</p>
+        <br></br>
+        <div className="quantity">
+            <span className="material-icons">remove</span>          
+            <span><p> # </p></span>
+            <span className="material-icons">add</span>
         </div>
       </>
     )
@@ -61,11 +69,9 @@ export default function ProductDetail() {
     <div className="ProductDetail">
       <div className="card">
         <img alt={`${product?.name} pic`} src={product?.image} />
-        <div className="title">
-          <h3>{product?.name}</h3>
+        <div className="info">
+          {renderProductContent()}
         </div>
-
-        {renderProductContent()}
       </div>
     </div>
   )

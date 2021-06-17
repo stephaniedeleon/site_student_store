@@ -1,39 +1,43 @@
 .Product {
-    border: 1px solid black;
+    border: 1px solid rgb(202, 202, 202);
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
+    background-color: white;
 }
   
 .Product:hover {
-    transform: translateY(-1px);
     cursor: pointer;
+    border-color: #00c98e;
 }
   
 .Product img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border-radius: 6px;
     position: relative;
 }
   
-.info {
+.Product .info {
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    font-size: 15px;
+    text-decoration: none;
+}
+
+.Product .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
 }
   
-.material-icons {
+.Product .material-icons {
+    font-size: 18px;
     color: black;
 }
   
-.material-icons:hover {
+.Product .material-icons:hover {
     color: gray;
-}
-  
-.name {
-    text-align: center;
-    font-size: 17px;
 }
