@@ -10,6 +10,7 @@ app.use(express.json());
 
 app.use("/store", storeRouter);
 
+
 // Handle all 404 errors that weren't matched by a route
 app.use((req, res, next) => {
     return next(new NotFoundError());
