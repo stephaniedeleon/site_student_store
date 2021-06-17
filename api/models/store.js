@@ -10,6 +10,7 @@ class Store {
 
     static async listItems() {
 
+        //reading from a json file
         const products = storage.get("products").value();
         return products;
     }
@@ -40,6 +41,7 @@ class Store {
 
         const newOrder = {name: userName, email: userEmail, cart};
 
+        //writing to a json file
         storage.get("orders").push(newOrder).write()
 
         return newOrder;
