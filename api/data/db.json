@@ -3,58 +3,58 @@
     {
       "id": 1,
       "name": "Rice Krispies",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/RKTsquares.jpg",
+      "image": "https://images.food52.com/5lB5xkkvFBxu3QFKlhNoOC6nXbc=/1200x1200/fc88c00e-5065-426a-b093-c8e4891baa75--2019-1001_salty-brown-butter-bourbon-marshmallow-crispy-treats_3x2_julia-gartland_110.jpg",
       "description": "Delicious corn-based rice grains melted together with marshmallows into a square-like shape.",
       "price": 0.99
     },
     {
       "id": 2,
-      "name": "Chips",
-      "image": "https://static.openfoodfacts.org/images/products/896/400/009/0879/front_en.14.full.jpg",
-      "description": "No one knows what's in the powder that covers these snacks, but wow is it amazing!",
+      "name": "Cinnamon",
+      "image": "https://www.lemonblossoms.com/wp-content/uploads/2019/12/Cinnamon-Buns-S2.jpg",
+      "description": "These rolls are big, fluffy, and full of delicious gooey cinnamon flavor. ",
       "price": 1.5
     },
     {
       "id": 3,
       "name": "Sweatshirt",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/RKTsquares.jpg",
-      "description": "Delicious corn-based rice grains melted together with marshmallows into a square-like shape.",
+      "image": "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/cover_image_mobile_1/715x773/17f82f742ffe127f42dca9de82fb58b1/i/H/1604511903_113J698A0531_C989_E01_GHC.jpg",
+      "description": "Smart, yet snuggly- a sweatshirt or a hoodie is the comfortable and cool choice for those what-to-wear days.",
       "price": 15
     },
     {
       "id": 4,
       "name": "Ice Cream",
-      "image": "https://static.openfoodfacts.org/images/products/896/400/009/0879/front_en.14.full.jpg",
-      "description": "No one knows what's in the powder that covers these snacks, but wow is it amazing!",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/easiest-ever-fruit-and-coconut-ice-cream-1589550075.jpg",
+      "description": "A rich, sweet, creamy frozen food made from variously flavored cream and milk products churned or stirred to a smooth consistency during the freezing process.",
       "price": 3.5
     },
     {
       "id": 5,
       "name": "Pens",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/RKTsquares.jpg",
-      "description": "Delicious corn-based rice grains melted together with marshmallows into a square-like shape.",
+      "image": "https://i5.walmartimages.com/asr/482e76d7-097c-4082-94d0-d35c0ea4382d_1.47902e5e642ca7d3cf794dedc0101dce.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+      "description": "A common writing instrument used to apply ink to a surface, usually paper, for writing or drawing.",
       "price": 0.99
     },
     {
       "id": 6,
       "name": "Notebook",
-      "image": "https://static.openfoodfacts.org/images/products/896/400/009/0879/front_en.14.full.jpg",
-      "description": "No one knows what's in the powder that covers these snacks, but wow is it amazing!",
+      "image": "https://cdn.shopify.com/s/files/1/0891/0192/products/productimage-picture-new-york-review-pocket-notebook-1-406_large.jpeg?v=1448908728",
+      "description": "A perfect item to take notes and doodle with.",
       "price": 5
     },
     {
       "id": 7,
       "name": "Coffee",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/RKTsquares.jpg",
-      "description": "Delicious corn-based rice grains melted together with marshmallows into a square-like shape.",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/flat-white-3402c4f.jpg?quality=90&resize=500%2C454",
+      "description": "A brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.",
       "price": 2
     },
     {
       "id": 8,
       "name": "Water",
-      "image": "https://static.openfoodfacts.org/images/products/896/400/009/0879/front_en.14.full.jpg",
-      "description": "No one knows what's in the powder that covers these snacks, but wow is it amazing!",
-      "price": 0.5
+      "image": "https://www.laxshopdine.com/wp-content/uploads/2019/04/0003-I-Love-L.A.-Product.jpg",
+      "description": "Drinking water is essential in keeping your body functioning properly and feeling healthy. Nearly all of your body’s major systems depend on water to function and survive.",
+      "price": 0.99
     }
   ],
   "orders": []
