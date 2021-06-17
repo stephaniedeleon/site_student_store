@@ -1,0 +1,34 @@
+.About {
+    margin: 0 40px;
+    padding-bottom: 30px;
+}
+
+.About .summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    height: fit-content;
+
+    max-width: 975px;
+
+    border: 1px solid #e0e0e0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.About .summary .text {
+    padding: 28px 36px;
+    color: #5b5b5b;
+    text-align: justify;
+}
+
+.About .summary .text p {
+    font-size: 18px;
+}
+
+.About .summary .media img {
+    padding: 10px;
+    height: 260px;
+}
