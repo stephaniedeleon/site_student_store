@@ -26,15 +26,21 @@ class Store {
             throw new BadRequestError("No user info found to checkout with.");
         }
 
-        //clears receipt
+        //not using yet... (reference later)
         //data.receipt = [];
+        //data.receipt.push(orders);
 
         let userName = userInfo.name;
-        let userEmail = userInfo.email;     
-        const newOrder = {name: userName, userEmail, cart};
+        let userEmail = userInfo.email;
+
+        //TODO: Need to get price for items, and multiply by quantity
+        //TODO: Need to add total
+        //let products = storage.get("products"); //.find refer to bank.js models = fetchTransactionById
+        //let item = storage.get("products").find({ name: Number(transactionId) })
+
+        const newOrder = {name: userName, email: userEmail, cart};
 
         storage.get("orders").push(newOrder).write()
-        //data.receipt.push(orders);
 
         return newOrder;
     }
