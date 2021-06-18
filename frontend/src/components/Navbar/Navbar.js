@@ -18,7 +18,6 @@ export default function Navbar() {
         </div>
         <div className="cart">
           <span className="material-icons md-48">shopping_cart</span>          
-          <p>#</p>
         </div>
       </nav>
     </div>
