@@ -41,3 +41,7 @@
 .Product .material-icons:hover {
     color: gray;
 }
+
+.Product .hidden {
+    display: none;
+}

@@ -12,6 +12,19 @@ export default function ProductDetail() {
   const [error, setError] = useState(false);
 
 
+  const [quantity, setQuantity] = useState(0);
+
+  function add() {
+    setQuantity(quantity + 1)
+  }
+
+  function subtract() {
+    if (quantity !== 0){
+      setQuantity(quantity - 1);
+    }
+  }
+
+
   //Getting product details...
   useEffect(() => {
 
@@ -40,7 +53,6 @@ export default function ProductDetail() {
   }, [productId])
 
 
-  //TODO: Need to update!!i
   //rendering the product content
   const renderProductContent = () => {
 
@@ -56,9 +68,9 @@ export default function ProductDetail() {
         <p className="description">{product?.description}</p>
         <br></br>
         <div className="quantity">
-            <span className="material-icons">remove</span>          
-            <span><p> # </p></span>
-            <span className="material-icons">add</span>
+            <span className="material-icons" onClick={subtract}>remove</span>          
+            <span><p> { quantity } </p></span>
+            <span className="material-icons" onClick={add}>add</span>
         </div>
       </>
     )
