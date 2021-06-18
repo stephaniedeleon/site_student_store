@@ -27,29 +27,58 @@ class Store {
             throw new BadRequestError("No user info found to checkout with.");
         }
 
-        //not using yet... (reference later)
-        //data.receipt = [];
-        //data.receipt.push(orders);
+        //Formats the total
+        let formatter = new Intl.NumberFormat("en-US", {
+            currency: "USD",
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+        });
+        
+        let formatAmount = (amount) => {
+            const dollars = amount;
+            return `$${formatter.format(dollars)}`;
+        }
 
+        //User Info
         let userName = userInfo.name;
         let userEmail = userInfo.email;
 
-        //TODO: Need to get price for items, and multiply by quantity
-        //TODO: Need to add total
-        //let products = storage.get("products"); //.find refer to bank.js models = fetchTransactionById
-        //let item = storage.get("products").find({ name: Number(transactionId) })
+        //For computing total
+        const tax = .0725;
+        const purchases = { items: [] };
+        let totalPrice = 0;
+        let price = 0;
+        let subtotal = 0;
+        let total = 0;
 
-        const newOrder = {name: userName, email: userEmail, cart};
+        for (const [key, value] of Object.entries(cart)) {
 
-        //writing to a json file
+            const product = storage.get("products").find({ name: key }).value();
+
+            price = product.price
+            totalPrice = price * value
+            //computes subtotal
+            subtotal += (totalPrice);
+
+            //stores total for each item based on quantity
+            let item = {item: key, price: formatAmount(price), quantity: value, total: formatAmount(totalPrice)};
+            purchases.items.push(item);
+        }
+
+        total = formatAmount(subtotal + (subtotal * tax));
+        subtotal = formatAmount(subtotal);
+
+        //writing new order to the database json file
+        const newOrder = {name: userName, email: userEmail, cart, purchases, subtotal: subtotal, total: total};
         storage.get("orders").push(newOrder).write()
 
         return newOrder;
     }
 
+
     //Fetch product by Id
     static async fetchProductById(productId) {
-        
+
         // fetch a single product
         const product = storage
           .get("products")
