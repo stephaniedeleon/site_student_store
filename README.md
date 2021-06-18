@@ -2,7 +2,7 @@
 
 Submitted by: **Stephanie De Leon**
 
-Estimated time spent: **3.5** hours spent in total
+Estimated time spent: **13.5** hours spent in total
 
 Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
 
